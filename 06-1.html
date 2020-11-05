@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .allbox{
+      display: flex;
+    }
+    .firstbox{
+      width: 300px;
+      border: 1px solid red;
+      padding: 10px;
+    }
+
+    .img1-1{
+     width: 100%;
+     vertical-align: middle;
+    }
+
+    .img1-2{
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    .img1 .img1-2{
+      display: none;
+    }
+
+    .img1:hover .img1-2{
+      display: block;
+    }
+
+    .img1:hover .img1-1{
+      display: none;
+    }
+    
+    .secbox{
+      width: 300px;
+      border: 1px solid red;
+      padding: 10px;
+    }
+
+    .img2{
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .img2-1:hover{
+      transform: scale(1.2);
+      transition: 1s;
+    }
+
+    .boxbox{
+      margin: 10px;
+    }
+
+    .img2-1{
+      width: 100%;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="allbox">
+    <div class="firstbox boxbox">
+      <div class="img1">
+        <img class="img1-1" src="https://picsum.photos/200/200/?random=1">
+        <img class="img1-2" src="https://picsum.photos/200/200/?random=2">
+      </div>
+      <div class="text">
+        <h3>123</h3>
+        <p>456</p>
+      </div>
+    </div>
+    <div class="secbox boxbox">
+      <div class="img2">
+        <img class="img2-1" src="https://picsum.photos/200/200/?random=3">
+      </div>
+      <div class="text">
+        <h3>123</h3>
+        <p>456</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

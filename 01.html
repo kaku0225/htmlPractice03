@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 300px;
+      border: 2px solid red;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .box img{
+      width: 100%;
+    }
+
+    .box .img{
+      overflow: hidden;
+    }
+
+    .box:hover img{
+      transform: scale(1.2);
+      transition: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="img">
+      <img src="https://picsum.photos/400/400/?random=1">
+    </div>
+    <div>
+      <h3>123</h3>
+      <p>456</p>
+    </div>
+  </div>
+</body>
+</html>
